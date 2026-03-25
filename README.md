@@ -1,14 +1,31 @@
-# Projeto ETL com Python
+# Projeto ETL
 
-Este projeto foi desenvolvido para demonstrar, de forma prática, o fluxo **ETL (Extract, Transform, Load)** usando Python e Pandas.
+## Sobre o projeto
+Este projeto foi desenvolvido para demonstrar, de forma prática, o processo de **ETL (Extract, Transform, Load)**.
+
+A aplicação realiza a leitura de dados, faz uma transformação simples nas informações e gera um novo arquivo com os resultados processados.
 
 ## Objetivo
+O principal objetivo deste projeto é praticar:
 
-Ler dados de usuários a partir de um arquivo CSV, gerar uma mensagem personalizada para cada registro e salvar o resultado em um novo arquivo.
+- leitura de dados a partir de arquivo
+- transformação de informações
+- geração de saída estruturada
+- organização de um projeto prático no GitHub
+
+## Etapas do processo ETL
+
+### Extract
+Leitura dos dados de entrada a partir de um arquivo CSV.
+
+### Transform
+Tratamento e transformação das informações, incluindo a criação de mensagens personalizadas para cada registro.
+
+### Load
+Geração de um novo arquivo CSV com os dados processados.
 
 ## Estrutura do projeto
-
-```text
+```bash
 etl-python-project/
 ├── data/
 │   └── usuarios.csv
@@ -17,46 +34,3 @@ etl-python-project/
 ├── resultado.csv
 ├── .gitignore
 └── README.md
-```
-
-## Etapas do ETL
-
-### Extract
-Leitura do arquivo `data/usuarios.csv`.
-
-### Transform
-Criação de uma coluna chamada `mensagem` com conteúdo personalizado para cada usuário.
-
-### Load
-Gravação do resultado no arquivo `resultado.csv`.
-
-## Como executar
-
-1. Instale as dependências:
-
-```bash
-pip install -r requirements.txt
-```
-
-2. Execute o projeto:
-
-```bash
-python etl.py
-```
-
-## Exemplo de saída
-
-O arquivo `resultado.csv` será gerado com a estrutura abaixo:
-
-| nome | conta | cartao | mensagem |
-|---|---:|---:|---|
-| Ana Silva | 12345 | 1111 | Olá, Ana! Temos uma novidade especial para você... |
-
-## Tecnologias utilizadas
-
-- Python 3
-- Pandas
-
-## Autor
-
-Projeto pronto para publicação no GitHub e entrega de atividade prática.
